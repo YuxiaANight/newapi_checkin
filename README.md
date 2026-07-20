@@ -1,6 +1,6 @@
 # New-API 签到插件
 
-AstrBot New-API 每日签到插件，支持全平台。
+AstrBot New-API 每日签到插件，支持全平台。大概就是插件市场的New-api签到不可用然后我开发了mua。
 
 ## 功能
 
@@ -46,5 +46,4 @@ AstrBot New-API 每日签到插件，支持全平台。
 ## 兼容性
 
 - AstrBot >= 4.26.7
-- Python >= 3.12
-- 全平台支持
+- 按道理来说全平台都支持，但只测试了QQ

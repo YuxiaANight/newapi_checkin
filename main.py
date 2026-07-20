@@ -29,17 +29,17 @@ class NewApiCheckinPlugin(Star):
                 )
                 result = response.json()
                 if result.get("success"):
-                    return f"签到成功 {result.get('message', '')}"
+                    return f"签到成功"
                 else:
                     return f"签到失败 {result.get('message', '未知错误')}"
         except httpx.TimeoutException:
             return "签到失败 请求超时"
         except httpx.RequestError as e:
-            return f"签到失败 网络错误 - {str(e)}"
+            return f"签到失败 网络错误"
         except json.JSONDecodeError:
             return "签到失败 API 返回格式异常"
         except Exception as e:
-            logger.error(f"签到异常: {e}")
+            logger.error(f"签到异常 {e}")
             return f"签到失败 {str(e)}"
 
     @filter.command("签到")
@@ -47,7 +47,7 @@ class NewApiCheckinPlugin(Star):
         result = await self._do_checkin()
         yield event.plain_result(result)
 
-    @filter.llm_tool(name="newapi_checkin", description="执行New-API每日签到，获取积分或奖励")
+    @filter.llm_tool(name="astrbot_plugin_newapi_checkin", description="执行New-API每日签到，获取积分或奖励")
     async def checkin_tool(self, event: AstrMessageEvent):
         if not self.enable_llm:
             return "签到工具未启用，请在插件设置中开启"

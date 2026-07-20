@@ -1,7 +1,8 @@
-name: newapi_checkin
+name: astrbot_plugin_newapi_checkin
 display_name: New-API 签到
 description: New-API 每日签到插件，支持全平台
 author: 雨下¹整晚²
 version: 1.0.0
 astrbot_version: ">=4.26.7"
 dependencies: []
+repo: https://github.com/YuxiaANight/newapi_checkin
