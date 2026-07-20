@@ -1,5 +1,7 @@
 # New-API 签到插件
 
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=YuxiaANight/newapi_checkin)
+
 AstrBot New-API 每日签到插件，支持全平台。大概就是插件市场的New-api签到不可用然后我开发了mua。
 
 ## 功能

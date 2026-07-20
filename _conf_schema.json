@@ -1,18 +1,22 @@
 {
     "api_url": {
         "type": "string",
+        "title": "Base Api",
         "default": "https://newapi.com"
     },
     "user_id": {
         "type": "string",
+        "title": "用户ID",
         "default": ""
     },
     "access_token": {
         "type": "string",
+        "title": "系统令牌",
         "default": ""
     },
     "enable_llm_checkin": {
         "type": "bool",
+        "title": "允许llm在对话过程中签到",
         "default": true
     }
 }
