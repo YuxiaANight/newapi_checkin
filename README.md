@@ -1,2 +1,50 @@
-# newapi_checkin
-Astrbot plugin that enables your bot to directly check in to New-api.
+# New-API 签到插件
+
+AstrBot New-API 每日签到插件，支持全平台。
+
+## 功能
+
+- 发送 `/签到` 即可完成 New-API 每日签到
+- 支持 LLM 在对话中自动调用签到工具（需在插件设置中开启）
+- 兼容全平台（QQ、微信、飞书、Telegram 等）
+
+## 安装
+
+1. 将插件文件夹放入 `data/plugins/` 目录
+2. 重启 AstrBot 或在管理面板中启用插件
+
+## 配置
+
+在 AstrBot 管理面板 -> 插件设置 -> New-API 签到 中配置：
+
+| 配置项 | 说明 |
+|--------|------|
+| API 地址 | New-API 站点地址，如 `https://api.example.com` |
+| 用户 ID | 在 New-API 个人设置页面查看 |
+| 系统访问令牌 | 个人设置 -> 安全设置 -> 系统访问令牌（不是 API Key） |
+| 允许 LLM 签到 | 开启后，LLM 可通过工具调用执行签到 |
+
+## 使用
+
+### 指令签到
+
+发送 `/签到` 即可签到。
+
+### LLM 自动签到（需开启配置）
+
+在对话中，LLM 可以识别签到意图并自动调用签到工具。
+
+示例：
+- 用户：“帮我签到”
+- LLM 自动调用签到工具并返回结果
+
+## 注意事项
+
+- 系统访问令牌从 New-API 站点的 **个人设置 -> 安全设置 -> 系统访问令牌** 获取
+- 令牌不是 API Key
+
+## 兼容性
+
+- AstrBot >= 4.26.7
+- Python >= 3.12
+- 全平台支持

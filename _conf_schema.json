@@ -1,0 +1,18 @@
+{
+    "api_url": {
+        "type": "string",
+        "default": "https://newapi.com"
+    },
+    "user_id": {
+        "type": "string",
+        "default": ""
+    },
+    "access_token": {
+        "type": "string",
+        "default": ""
+    },
+    "enable_llm_checkin": {
+        "type": "bool",
+        "default": true
+    }
+}
